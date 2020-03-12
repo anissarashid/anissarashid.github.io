@@ -1,0 +1,293 @@
+body {
+	background: #F5F5F5;
+	scroll-behavior: smooth;
+
+}
+
+p {
+	
+	font-family: nimbus-sans, sans-serif;
+
+	font-weight: 400;
+
+	font-style: normal;
+}
+
+a {
+	font-family: nimbus-sans, sans-serif;
+
+	font-weight: 400;
+
+	font-style: normal;
+}
+.pagecont {
+	display: flex;
+}
+
+.menu {
+	flex:20%;
+	display: flex;
+	flex-direction: column;
+	margin-left: 3%;
+	position: fixed;
+	margin-top: 3%;
+}
+
+.container {
+	position: relative;
+	display: flex;
+    flex-direction: column;
+    max-width: 750px;
+    margin-top: 5%;
+    left: 300px;
+
+   
+}
+
+a.name {
+	font-family: jaf-lapture-display, serif;
+	font-style: normal;
+	font-size: 30px;
+	font-weight: 800;
+
+	
+}
+
+.menucontents {
+	display: flex;
+	flex-direction: column;
+	
+}
+
+.side {
+	font-size: 20px;
+	font-weight: 700;
+	font-family: jaf-lapture-display, serif;
+	margin-bottom: 2%;
+	
+
+}
+
+
+.title_thumb {
+	font-family: jaf-lapture-display, serif;
+	font-weight: 600;
+	margin-top: 3%;
+	margin-bottom: 1%;
+	font-size: 20px;
+
+}
+
+.thumbs_wrapper {
+
+}
+.title_thumb {
+
+}
+.title_pics {
+	display: flex;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+
+}
+
+img {
+	margin-right: 3%;
+	margin-bottom: 3%;
+}
+
+a:hover {
+	transition: 0.3s;
+	cursor: pointer;
+	color: #e3a600;
+	transform: scale(1.02);
+}
+
+a {
+	text-decoration: none;
+    color: black;
+    margin-bottom:8px; 
+}
+
+a.contact {
+	margin-top: 10px;
+	font-size: 20px;
+	font-weight: 700;
+	font-family: jaf-lapture-display, serif;
+
+}
+
+
+a.txtover {
+	margin-right: 3%; 
+	position: relative;
+	
+
+}
+
+#title {
+	
+	position: absolute;
+  	left: 50%;
+  	top: 50%;
+  	transform: translate(-50%,-50%);
+  	font-size: 14px;
+  	text-align: center;
+  	opacity: 0 
+
+}
+
+a.txtover:hover img {
+	opacity: .1;
+	transition: 0.4s;
+	cursor: pointer;
+	color: #f4cb42;
+}
+
+a.txtover:hover #title {
+	transition: 0.2s;
+	opacity: 1;
+}
+
+.pics {
+	display: flex;
+	align-content: flex-start;
+	flex-wrap: wrap;
+	
+}
+
+.portpics {
+	margin-right: 25px;
+	margin-bottom: 25px;
+}
+.contactpic {
+	margin-right: 25px;
+	margin-bottom: 25px;
+	margin-top: 15%;
+}
+
+
+.dTitle {
+	position: fixed;
+	margin-bottom: 10px;
+	font-size: 25px;
+	font-weight: 700;
+	font-family: jaf-lapture-display, serif;
+}
+
+.description {
+	margin-top: 8%;
+}
+
+.boldwrd {
+	font-weight: 700;
+}
+
+.description_txt {
+	font-weight: 400;
+
+}
+.description_txt_1 {
+	font-weight: 400;
+	margin-top: -10px;
+
+}
+
+.contacttxt {
+	max-width: 300px;
+	margin-top: 15%;
+}
+
+.picss {
+	display: flex;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+
+}
+
+
+.center-con {
+	position: fixed;
+	left: 95%;
+	top: 50%;
+	transform: translateY(-10%);
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.round {
+    position: absolute;
+    border: 2px solid black;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    
+}
+
+#cta{
+    width:100%; cursor: pointer; position: absolute;
+
+}
+
+#cta .arrow{left: 30%;}
+.arrow {position: absolute; bottom: 0; margin-top: -3px; margin-left:0px; width: 20px; height: 20px; background-size: contain; top:15px;}
+.segunda{margin-left: 10px;}
+.next {
+	background-image: url(http://icons.iconarchive.com/icons/icons8/ios7/512/Weather-Partly-Cloudy-Night-icon.png);
+}
+
+@keyframes bounceAlpha {
+  0% {opacity: 1; transform: translateX(0px) scale(1);}
+  25%{opacity: 0; transform:translateX(10px) scale(0.9);}
+  26%{opacity: 0; transform:translateX(-10px) scale(0.9);}
+  55% {opacity: 1; transform: translateX(0px) scale(1);}
+}
+
+.bounceAlpha {
+    animation-name: bounceAlpha;
+    animation-duration:1.4s;
+    animation-iteration-count:infinite;
+    animation-timing-function:linear;
+}
+
+.arrow.primera.bounceAlpha {
+    animation-name: bounceAlpha;
+    animation-duration:1.4s;
+    animation-delay:0.2s;
+    animation-iteration-count:infinite;
+    animation-timing-function:linear;
+}
+
+.center-con:hover .arrow{
+    animation-name: bounceAlpha;
+    animation-duration:1.4s;
+    animation-iteration-count:infinite;
+    animation-timing-function:linear;
+}
+.center-con:hover .arrow.primera{
+    animation-name: bounceAlpha;
+    animation-duration:1.4s;
+    animation-delay:0.2s;
+    animation-iteration-count:infinite;
+    animation-timing-function:linear;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
