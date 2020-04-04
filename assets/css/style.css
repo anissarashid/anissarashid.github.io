@@ -164,6 +164,8 @@ a.txtover:hover #title {
 	margin-right: 25px;
 	margin-bottom: 25px;
 	margin-top: 15%;
+	max-height: 200px;
+
 }
 
 
@@ -194,8 +196,9 @@ a.txtover:hover #title {
 }
 
 .contacttxt {
-	max-width: 300px;
+	max-width: 350px;
 	margin-top: 15%;
+	font-size: 18px;
 }
 
 .picss {
