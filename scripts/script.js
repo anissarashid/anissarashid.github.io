@@ -26,7 +26,7 @@ $(document).ready(function() {
 		}
 
 		else {
-			$('body').css('background', '#F5F5F5');
+			$('body').css('background', '#fcf6e6');
 			$('p, .name, .contact, .title_thumb').css('color','black');
 			$('.sidebar_item, .description_txt').css('color', 'black');
 			black = false;
