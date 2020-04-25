@@ -46,6 +46,17 @@ a {
    
 }
 
+.containerhome {
+	position: relative;
+	display: flex;
+    flex-direction: column;
+    max-width: 900px;
+    margin-top: 5%;
+    left: 300px;
+
+   
+}
+
 a.name {
 	font-family: jaf-lapture-display, serif;
 	font-style: normal;
@@ -81,9 +92,11 @@ a.name {
 }
 
 .thumbs_wrapper {
+	max-width: 900px;
 
 }
 .title_thumb {
+	font-size: 24px;
 
 }
 .title_pics {
@@ -91,6 +104,10 @@ a.name {
 	justify-content: flex-start;
 	flex-wrap: wrap;
 
+}
+
+.txtcont {
+	max-width: 700px;
 }
 
 img {
@@ -133,7 +150,7 @@ a.txtover {
   	left: 50%;
   	top: 50%;
   	transform: translate(-50%,-50%);
-  	font-size: 14px;
+  	font-size: 18px;
   	text-align: center;
   	opacity: 0 
 
