@@ -154,6 +154,7 @@ a.txtover {
   	text-align: center;
   	opacity: 0 
 
+
 }
 
 a.txtover:hover img {
@@ -179,6 +180,12 @@ a.txtover:hover #title {
 	margin-right: 25px;
 	margin-bottom: 25px;
 }
+
+.portpics:hover {
+	transition: 0.3s;
+	transform: scale(1.08);
+}
+
 .contactpic {
 	margin-right: 25px;
 	margin-bottom: 25px;
