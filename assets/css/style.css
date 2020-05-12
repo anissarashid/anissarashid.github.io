@@ -164,6 +164,15 @@ a.txtover:hover img {
 	color: #f4cb42;
 }
 
+
+a.txtover:hover video {
+	opacity: .1;
+	transition: 0.4s;
+	cursor: pointer;
+	color: #f4cb42;
+}
+
+
 a.txtover:hover #title {
 	transition: 0.2s;
 	opacity: 1;
