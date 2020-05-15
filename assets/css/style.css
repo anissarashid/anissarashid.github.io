@@ -6,7 +6,7 @@ body {
 
 p {
 	
-	font-family: nimbus-sans, sans-serif;
+	font-family: degular, sans-serif;
 
 	font-weight: 400;
 
@@ -14,12 +14,13 @@ p {
 }
 
 a {
-	font-family: nimbus-sans, sans-serif;
+	font-family: degular, sans-serif;
 
-	font-weight: 400;
+	font-weight: 500;
 
 	font-style: normal;
 }
+
 .pagecont {
 	display: flex;
 	animation: load-in 2.7s ease;
@@ -36,12 +37,14 @@ a {
 }
 
 .container {
+
 	position: relative;
 	display: flex;
     flex-direction: column;
-    max-width: 750px;
+    max-width: 800px;
     margin-top: 5%;
     left: 300px;
+    align-items: center;
 
    
 }
@@ -50,11 +53,24 @@ a {
 	position: relative;
 	display: flex;
     flex-direction: column;
-    max-width: 900px;
+    max-width: 1000px;
     margin-top: 5%;
     left: 300px;
 
    
+}
+
+.containercontact {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	display: flex;
+    flex-direction: column;
+    max-width: 800px;
+   	margin-top: -2%;
+    align-items: center;
+
 }
 
 a.name {
@@ -76,8 +92,11 @@ a.name {
 	font-size: 20px;
 	font-weight: 700;
 	font-family: jaf-lapture-display, serif;
-	margin-bottom: 2%;
+	margin-bottom: 1%;
 	
+}
+
+.sidebar_item {
 
 }
 
@@ -92,7 +111,7 @@ a.name {
 }
 
 .thumbs_wrapper {
-	max-width: 900px;
+	max-width: 1300px;
 
 }
 .title_thumb {
@@ -108,6 +127,8 @@ a.name {
 
 .txtcont {
 	max-width: 700px;
+
+
 }
 
 img {
@@ -180,8 +201,8 @@ a.txtover:hover #title {
 
 .pics {
 	display: flex;
-	align-content: flex-start;
 	flex-wrap: wrap;
+	justify-content: center;
 	
 }
 
@@ -199,7 +220,7 @@ a.txtover:hover #title {
 	margin-right: 25px;
 	margin-bottom: 25px;
 	margin-top: 15%;
-	max-height: 200px;
+
 
 }
 
@@ -207,9 +228,10 @@ a.txtover:hover #title {
 .dTitle {
 	position: fixed;
 	margin-bottom: 10px;
-	font-size: 25px;
+	font-size: 30px;
 	font-weight: 700;
 	font-family: jaf-lapture-display, serif;
+	z-index: -1;
 }
 
 .description {
@@ -218,16 +240,31 @@ a.txtover:hover #title {
 
 .boldwrd {
 	font-weight: 700;
-	font-size: 20px;
+	font-family: jaf-lapture-display, serif;
+	font-size: 27px;
+
+}
+
+.boldwrdd {
+	font-weight: 600;
+
+
 }
 
 .description_txt {
-	font-weight: 400;
+	font-weight: 300;
+	font-size: 20px;
+	font-family: degular, sans-serif;
 
 }
 .description_txt_1 {
-	font-weight: 400;
+	
 	margin-top: -10px;
+	font-size: 20px;
+	
+	font-family: degular, sans-serif;
+
+	font-weight: 400;
 
 }
 
@@ -241,6 +278,7 @@ a.txtover:hover #title {
 	display: flex;
 	justify-content: flex-start;
 	flex-wrap: wrap;
+	align-items: center;
 
 }
 
