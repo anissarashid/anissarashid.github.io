@@ -1,5 +1,5 @@
 body {
-	background: #fcf6e6;
+	background: #f7f6ed;
 	scroll-behavior: smooth;
 
 }
@@ -21,41 +21,51 @@ a {
 	font-style: normal;
 }
 
-.pagecont {
-	display: flex;
-	animation: load-in 2.7s ease;
-}
 
 .menu {
 
 	flex:20%;
 	display: flex;
 	flex-direction: column;
-	margin-left: 3%;
+	margin-left: 5%;
 	position: fixed;
 	margin-top: 3%;
+	margin-right: 0%;
+
 }
 
 .container {
-
-	position: relative;
-	display: flex;
+	display: flex;  
+    align-items: center;
     flex-direction: column;
     max-width: 800px;
-    margin-top: 5%;
-    left: 300px;
-    align-items: center;
+    margin-top: 4%;
 
-   
+
+
+
+}
+
+#home.container {
+	max-width: 1000px;
+	margin-top: 3%;
+}
+
+.pagecont {
+	display: flex;
+    
+    justify-content: center;
 }
 
 .containerhome {
-	position: relative;
+	
 	display: flex;
+    
+    align-items: center;
     flex-direction: column;
-    max-width: 1000px;
+    max-width: 800px;
     margin-top: 5%;
-    left: 300px;
+ 
 
    
 }
@@ -82,21 +92,27 @@ a.name {
 	
 }
 
+.name {
+	margin-bottom: -10%;
+}
+
 .menucontents {
 	display: flex;
 	flex-direction: column;
+
 	
 }
 
 .side {
-	font-size: 20px;
+	font-size: 17px;
 	font-weight: 700;
 	font-family: jaf-lapture-display, serif;
 	margin-bottom: 1%;
-	
+
 }
 
 .sidebar_item {
+	font-size: 18px;
 
 }
 
@@ -111,22 +127,37 @@ a.name {
 }
 
 .thumbs_wrapper {
-	max-width: 1300px;
+	display: flex;
+    justify-content: center;
 
+    flex-direction: row;
+    max-width: 1300px;
+
+    flex-basis: 100%;
+    flex:1;
+    
 }
+
+
 .title_thumb {
 	font-size: 24px;
 
 }
 .title_pics {
+
+
 	display: flex;
 	justify-content: flex-start;
 	flex-wrap: wrap;
+	align-items: center;
+
+
 
 }
 
 .txtcont {
 	max-width: 700px;
+	margin-bottom: 2%;
 
 
 }
@@ -134,12 +165,18 @@ a.name {
 img {
 	margin-right: 3%;
 	margin-bottom: 3%;
+
+}
+
+video {
+	margin-right: 3%;
+	margin-bottom: 3%;
 }
 
 a:hover {
 	transition: 0.3s;
 	cursor: pointer;
-	color: #e3a600;
+	color: #b51414;
 	transform: scale(1.02);
 }
 
@@ -151,17 +188,31 @@ a {
 
 a.contact {
 	margin-top: 10px;
-	font-size: 20px;
+	font-size: 17px;
 	font-weight: 700;
 	font-family: jaf-lapture-display, serif;
+	margin-top: -83%;
+
+
+}
+
+a.contactt {
+	margin-top: 10px;
+	font-size: 17px;
+	font-weight: 700;
+	font-family: jaf-lapture-display, serif;
+
+
 
 }
 
 
 a.txtover {
-	margin-right: 3%; 
-	position: relative;
-	
+	margin-right: 10%; 
+	margin-bottom: 15%;
+	position: relative;	
+
+
 
 }
 
@@ -178,11 +229,42 @@ a.txtover {
 
 }
 
+#newtitle {
+	position: relative;
+	margin-left: 2%;
+  	font-size: 32px;
+  	color: #b51414;
+  	opacity: 1;
+	font-family: jaf-lapture, serif;
+	font-weight: 400;
+	font-style: italic;
+	
+}
+
+#newtitle_1 {
+	
+	position: absolute;
+  	left: 4%;
+  	top: -13%;
+  	font-size: 35px;
+  	color: #b51414;
+  	text-align: center;
+  	opacity: 1;
+	font-family: monarcha, serif;
+	font-weight: 400;
+	font-style: italic;
+	
+	
+}
+
+
+
+
 a.txtover:hover img {
 	opacity: .1;
 	transition: 0.4s;
 	cursor: pointer;
-	color: #f4cb42;
+	color: #b51414;
 }
 
 
@@ -190,7 +272,7 @@ a.txtover:hover video {
 	opacity: .1;
 	transition: 0.4s;
 	cursor: pointer;
-	color: #f4cb42;
+	color: #b51414;
 }
 
 
@@ -203,12 +285,44 @@ a.txtover:hover #title {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
+	margin: 3%;
+
 	
+}
+
+.pics_graphics {
+	display: flex;
+	align-content: flex-start;
+	flex-direction: row;
+	margin: 3%;
+	align-items: center;
+	flex-wrap: wrap;
+	justify-content: center;
+
+	
+}
+
+.picss {
+	display: flex;
+	align-content: flex-start;
+	flex-direction: column;
+	margin: 3%;
+	align-items: center;
+	
+}
+
+.sub_thumb {
+	margin-bottom: 5%;
 }
 
 .portpics {
 	margin-right: 25px;
 	margin-bottom: 25px;
+}
+
+#graph.portpics {
+	margin-right: 40px;
+	margin-bottom: 40px;
 }
 
 .portpics:hover {
@@ -219,7 +333,8 @@ a.txtover:hover #title {
 .contactpic {
 	margin-right: 25px;
 	margin-bottom: 25px;
-	margin-top: 15%;
+	margin-left: 25px;
+	
 
 
 }
@@ -232,6 +347,7 @@ a.txtover:hover #title {
 	font-weight: 700;
 	font-family: jaf-lapture-display, serif;
 	z-index: -1;
+	color: #b51414;
 }
 
 .description {
@@ -242,6 +358,7 @@ a.txtover:hover #title {
 	font-weight: 700;
 	font-family: jaf-lapture-display, serif;
 	font-size: 27px;
+	color: #b51414;
 
 }
 
@@ -255,6 +372,7 @@ a.txtover:hover #title {
 	font-weight: 300;
 	font-size: 20px;
 	font-family: degular, sans-serif;
+	margin-bottom: 0.5%;
 
 }
 .description_txt_1 {
@@ -268,8 +386,32 @@ a.txtover:hover #title {
 
 }
 
+.ml6 {
+  font-weight: 600;
+  font-size: 38px;
+  font-family: jaf-lapture, sans-serif;
+  position: relative;
+  display: flex;
+  align-self: center;
+ 
+
+
+
+}
+
+.ml6 .text-wrapper {
+
+ 	
+}
+
+.ml6 .letter {
+  display: inline-block;
+  line-height: 1em;
+}
+
+
 .contacttxt {
-	max-width: 350px;
+	
 	margin-top: 15%;
 	font-size: 18px;
 }
@@ -278,7 +420,7 @@ a.txtover:hover #title {
 	display: flex;
 	justify-content: flex-start;
 	flex-wrap: wrap;
-	align-items: center;
+	margin-left: 5%;
 
 }
 
@@ -298,12 +440,93 @@ a.txtover:hover #title {
 
 .round {
     position: absolute;
-    border: 2px solid black;
+    border: 1px solid black;
     width: 40px;
     height: 40px;
     border-radius: 100%;
     
 }
+
+
+
+.box {
+	display: flex;
+  	flex-direction: row;
+  	flex-wrap: wrap;
+  	width: 100%;
+  	margin-top: 9%;
+
+
+}
+
+.col1 {
+	display: flex;
+  	flex-direction: column;
+  	flex-basis: 100%;
+  	flex: 1;
+
+}
+
+#cd.box {
+	margin-top: -56%;
+	margin-bottom: -30%;
+	
+}
+
+#col2 {
+	display: flex;
+	flex-direction: column;
+	flex-basis: 100%;
+	flex: 1;
+	opacity: 0;
+	margin-left: 16%;
+	z-index: 1;
+}
+
+#col2cd {
+	display: flex;
+	flex-direction: column;
+	flex-basis: 100%;
+	flex: 1;
+	opacity: 0;
+	margin-left: 18%;
+	
+}
+
+.box:hover  #col2 {
+	transition: 0.2s;
+	opacity: 1;
+	
+}
+
+#cd.box:hover #col2cd {
+	transition: 0.2s;
+	opacity: 1;
+	z-index: 1;
+}
+
+#logo2 {
+	position: fixed;
+	left:5.5%;
+	opacity: 0;
+}
+
+.name:hover #logo2 {
+	position: fixed;
+	left: -1%;
+	opacity: 1;
+}
+
+.name:hover #logo {
+
+
+	opacity: 0
+}
+
+.newhome {
+	
+}
+
 
 #cta{
     width:100%; cursor: pointer; position: absolute;
