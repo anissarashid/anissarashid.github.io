@@ -38,12 +38,12 @@ $(document).ready(function() {
 
 $(window).scroll(function() {
 
-    //After scrolling 100px from the top...
-    if ( $(window).scrollTop() >= 300 ) {
-        $('.dTitle').css('color', '#dbd0d0');
+    if ( $(window).scrollTop() >= 20 ) {
+        $('.dTitle').css('color', '#dbd0d0').fadeIn('slow');
+
         
 
-    //Otherwise remove inline styles and thereby revert to original stying
+    
     } else {
         $('.dTitle').attr('style', '');
 
