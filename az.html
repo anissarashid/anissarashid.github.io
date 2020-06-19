@@ -7,6 +7,8 @@
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 	<link href="https://fonts.googleapis.com/css?family=Work+Sans:400,500,600,700,800,900&display=swap" rel="stylesheet">
 	<link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico?">
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
 </head>
 <body>
 	
@@ -48,19 +50,19 @@
 
 		<p class="description_txt"  > <span class= "boldwrd"> First iteration: </span> </p>
 		<div class="pics">
-			<img class="portpics" src="assets/img/az1.png" width="400px">
-			<img class="portpics" src="assets/img/az2.png" width="400px">
-			<img class="portpics" src="assets/img/az3.png" width="400px">
-			<img class="portpics" src="assets/img/az4.png" width="400px">
+			<img class="portpics" src="assets/img/az1.png" width="400px" >
+			<img class="portpics" src="assets/img/az2.png" width="400px" >
+			<img class="portpics" src="assets/img/az3.png" width="400px" data-aos="fade-up">
+			<img class="portpics" src="assets/img/az4.png" width="400px" data-aos="fade-up">
 			<p class="description_txt_1" style="max-width: 800px;"> Above are our first iterations for the home page and lyric page redesigns, and below those is how the current AZ Lyrics website looks. We wanted to keep the site as simple as possible, while keeping some of the elements such as color and the alphabet theme consistent. We simplified the homepage to only include text and no images, and we wanted to add a feature to the lyric page that allowed users to easily navigate to the album or artist of the song they're on.  </p>
 		</div>
 		
 		<p class="description_txt" > <span class= "boldwrd"> Wireframe: </span> </p>
 		<div class="pics">
-			<img class="portpics" src="assets/img/az5.png" width="400px">
-			<img class="portpics" src="assets/img/az6.png" width="400px">
-			<img class="portpics" src="assets/img/az7.png" width="400px">
-			<img class="portpics" src="assets/img/az8.png" width="400px">
+			<img class="portpics" src="assets/img/az5.png" width="400px" data-aos="fade-up">
+			<img class="portpics" src="assets/img/az6.png" width="400px" data-aos="fade-up">
+			<img class="portpics" src="assets/img/az7.png" width="400px" data-aos="fade-up">
+			<img class="portpics" src="assets/img/az8.png" width="400px" data-aos="fade-up">
 			<p class="description_txt_1" style="max-width: 800px;"> We inspired by brutalist design and decided to further simplify the site. To make the site more minimal we decided to use a light gray background instead of the original purple and reduced the amount of text and image even more, only keeping the necessary information.  </p> 
 			<p class="description_txt_1" style="max-width: 800px;"> For the homepage, we wanted to make it as easy as possible for users to search for their desired song, artist, or album, and we kept some elements similar to our previous idea - such as the font and eye logo. </p>
 			<p class="description_txt_1" style="max-width: 800px;">The top right is the wireframe for the search page, so if somebody searches for a particular artist, they can clearly see the results for top songs, albums, artist results through the bold text or recognizable visuals. </p>
@@ -71,7 +73,7 @@
 
 		<p class="description_txt"> <span class= "boldwrd"> Final website: </span> </p>
 		<div class="pics">
-			<a href= "http://anissarashid.me/azlyrics/"> <video class="portpics" width="697" preload controls autoplay loop muted="true">
+			<a href= "http://anissarashid.me/azlyrics/"> <video class="portpics" width="697" preload controls autoplay loop muted="true" data-aos="fade-up">
 				<source src="assets/img/azvid.mp4">
 			</video> </a>
 
@@ -90,6 +92,17 @@
 	</div>
 </div>
 
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+    	offset: 30, // offset (in px) from the original trigger point
+        delay: 0, // values from 0 to 3000, with step 50ms
+        duration: 1000, // values from 0 to 3000, with step 50ms
+        
+    });
+  </script>
 
 </body>
 </html>
+
+

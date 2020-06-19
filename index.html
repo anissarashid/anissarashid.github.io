@@ -8,6 +8,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Work+Sans:400,500,600,700,800,900&display=swap" rel="stylesheet">
 	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 	<link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico?">
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
 </head>
 <body>
@@ -52,13 +53,13 @@
 
 					<a href="misc.html" class="txtover">
 						<div id= "newtitle"> BARE </div>
-						<div class="newhome" > <img id = "misc" src="assets/img/misc.png" width="400px"> </div>
+						<div class="newhome" > <img id = "misc" src="assets/img/misc.png" width="400px" > </div>
 						<div id = "title">  creative direction, photography </div>
 						
 					</a>	
 					<a href="az.html" class="txtover">
 						<div id= "newtitle"> AZ Lyrics </div>
-						<div class="newhome" >  <img  id = "az" src="assets/img/azlyrics.png" width="400px"> </div>
+						<div class="newhome" >  <img  id = "az" src="assets/img/azlyrics.png" width="400px" data-aos="fade-up"> </div>
 						<div id = "title"> UI, web design</div>	
 						
 					</a>
@@ -75,7 +76,7 @@
 					
 					<a href="light.html" class="txtover">
 						<div id= "newtitle"> Lightning MqQueen</div>
-						<div class="newhome" > <video id = "light"  width="400px" preload controls autoplay loop muted="true">
+						<div class="newhome" > <video id = "light"  width="400px" preload controls autoplay loop muted="true" >
 							<source src="assets/img/final.mp4">
 						</video> </div>
 						<div id = "title"> physical design, prototyping </div>
@@ -84,7 +85,7 @@
 
 					<a href="graphics.html" class="txtover" width='350px'>
 						<div id= "newtitle"> Graphics </div>
-						<img id = "graphic" src="assets/img/earth-07.png"  width="350px"> 
+						<img id = "graphic" src="assets/img/earth-07.png"  width="350px" data-aos="fade-up"> 
 						<div id = "title"> graphic design </div>
 						
 					</a>
@@ -106,7 +107,15 @@
 </div>
 			
 
-	
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+    	offset: 5, // offset (in px) from the original trigger point
+        delay: 0, // values from 0 to 3000, with step 50ms
+        duration: 1000, // values from 0 to 3000, with step 50ms
+        
+    });
+  </script>
 
 </body>
 

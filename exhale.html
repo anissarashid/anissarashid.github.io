@@ -7,6 +7,7 @@
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 	<link href="https://fonts.googleapis.com/css?family=Work+Sans:400,500,600,700,800,900&display=swap" rel="stylesheet">
 	<link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico?">
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
 	
@@ -45,7 +46,7 @@
 
 		<p class="description_txt"> <span class= "boldwrd"> Sketch: </span> </p>
 		<div class="pics">
-			<img class="portpics" src="assets/img/circle.png" width="225px">
+			<img class="portpics" src="assets/img/circle.png" width="225px" >
 	
 			<p class="description_txt_1"> My initial thought was to create a circle expanded and contracted to the rhythm of a breath that looked like the picture above. </p>
 		</div>
@@ -53,7 +54,7 @@
 		<p class="description_txt"> <span class= "boldwrd"> Website: </span> </p>
 		<div class="pics">
 			<a href="https://anissarashid.github.io/exhale/">
-			<video class="portpics" width="700" preload controls autoplay loop muted >
+			<video class="portpics" width="700" preload controls autoplay loop muted data-aos="fade-up" >
 				<source src="assets/img/exhale.mp4">
 			</video>
 			</a>
@@ -63,8 +64,8 @@
 		
 		<p class="description_txt"> <span class= "boldwrd"> Branding Materials: </span> </p>
 		<div class="pics">
-			<img class="portpics" src="assets/img/stickernew.png" width="500px">
-			<img class="portpics" src="assets/img/stickernew2.png" width="500px">
+			<img class="portpics" src="assets/img/stickernew.png" width="500px" data-aos="fade-up">
+			<img class="portpics" src="assets/img/stickernew2.png" width="500px" data-aos="fade-up">
 			<p class="description_txt_1"> These are two sticker or flyer designs that could be printed and distributed around UC Berkeley in order to spread awareness of this digital tool. </p>
 
 		</div>
@@ -83,5 +84,19 @@
 		</div>
 	</div>
 
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+    	offset: 30, // offset (in px) from the original trigger point
+        delay: 0, // values from 0 to 3000, with step 50ms
+        duration: 1000, // values from 0 to 3000, with step 50ms
+        
+    });
+  </script>
+
 </body>
 </html>
+
+
+
