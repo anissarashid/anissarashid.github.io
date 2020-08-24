@@ -1,6 +1,7 @@
 body {
 	background: #f7f6ed;
 	scroll-behavior: smooth;
+	
 
 }
 
@@ -23,7 +24,7 @@ a {
 
 
 .menu {
-
+	position: fixed;
 	flex:20%;
 	display: flex;
 	flex-direction: column;
@@ -40,6 +41,7 @@ a {
     flex-direction: column;
     max-width: 800px;
     margin-top: 4%;
+   
 
 
 
@@ -49,6 +51,9 @@ a {
 #home.container {
 	max-width: 1000px;
 	margin-top: 3%;
+	animation: fadeInAnimation ease 3s; 
+    animation-iteration-count: 1; 
+    animation-fill-mode: forwards; 
 }
 
 .pagecont {
@@ -290,6 +295,12 @@ a.txtover:hover #title {
 	
 }
 
+#his.pics {
+	animation: fadeInAnimation ease 3s; 
+    animation-iteration-count: 1; 
+    animation-fill-mode: forwards; 
+}
+
 .pics_graphics {
 	display: flex;
 	align-content: flex-start;
@@ -318,11 +329,17 @@ a.txtover:hover #title {
 .portpics {
 	margin-right: 25px;
 	margin-bottom: 25px;
+	animation: fadeInAnimation ease 3s; 
+    animation-iteration-count: 1; 
+    animation-fill-mode: forwards; 
 }
 
 #graph.portpics {
 	margin-right: 40px;
 	margin-bottom: 40px;
+	animation: fadeInAnimation ease 3s; 
+    animation-iteration-count: 1; 
+    animation-fill-mode: forwards; 
 }
 
 .portpics:hover {
@@ -334,6 +351,9 @@ a.txtover:hover #title {
 	margin-right: 25px;
 	margin-bottom: 25px;
 	margin-left: 25px;
+	animation: fadeInAnimation ease 3s; 
+    animation-iteration-count: 1; 
+    animation-fill-mode: forwards; 
 	
 
 
@@ -352,6 +372,7 @@ a.txtover:hover #title {
 
 .description {
 	margin-top: 8%;
+	margin-bottom: 5%;
 }
 
 .boldwrd {
@@ -359,6 +380,17 @@ a.txtover:hover #title {
 	font-family: jaf-lapture-display, serif;
 	font-size: 27px;
 	color: #b51414;
+
+
+}
+
+.boldwrd1 {
+	font-weight: 700;
+	font-family: jaf-lapture-display, serif;
+	font-size: 20px;
+	color: #b51414;
+	margin:10px;
+	text-align: start;
 
 }
 
@@ -382,8 +414,14 @@ a.txtover:hover #title {
 	
 	font-family: degular, sans-serif;
 
-	font-weight: 400;
+	font-weight: 300;
 
+}
+
+.left_title {
+	display: flex;
+	flex-direction: row;
+	align-content: space-between;
 }
 
 .ml6 {
@@ -524,7 +562,8 @@ a.txtover:hover #title {
 }
 
 .newhome {
-	
+	display: flex;
+	justify-content: center;	
 }
 
 
@@ -583,6 +622,17 @@ a.txtover:hover #title {
 }
 
 
+
+@keyframes fadeInAnimation {
+	from { 
+		
+		opacity:0; 
+	} 
+ 	to { 
+ 		
+ 		opacity:1; 
+ 	}
+}
 
 
 
