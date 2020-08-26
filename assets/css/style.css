@@ -200,15 +200,6 @@ a.contact {
 	max-width: 460px;
 	justify-content: center;
 
-	display: flex;
-	align-content: flex-start;
-	flex-direction: row;
-	margin: 3%;
-	align-items: center;
-	flex-wrap: wrap;
-	justify-content: center;
-
-
 }
 
 a.txtover {
@@ -265,8 +256,8 @@ a.txtover:hover #title {
 }
 
 #frontpics {
+	max-width: 100%;
 	
-	width: 400px;
 	margin:0%;
 }
 
