@@ -11,30 +11,22 @@
 </head>
 <body>
 	
-	<div class="menu">
+	<div id="bothmenu">
+		<div class="rightmenu">
 		<a href= "index.html" class="name"> 
-		<img id = "logo" src="assets/img/logoblack.png" height="80px" width="80px" >
-		<img id = "logo2" src="assets/img/logored.png" height="80px" width="80px" > </a>
-		<div class="menucontents">	
-			<div class="box">
-				<div class="col1">
-					<a href="index.html" class="side"> Work </a>
-				</div>
-				<div class="col2">
-					<a href = "his.html" class="sidebar_item"> His Pills </a>	
-					<a href = "exhale.html" class="sidebar_item"> Exhale </a>	
-					<a href = "misc.html" class="sidebar_item"> BARE </a>
-					<a href = "light.html" class="sidebar_item"> Lightning McQueen </a>	
-					<a href = "papaya.html" class="sidebar_item"> Papaya </a>
-					<a href = "graphics.html" class="sidebar_item"> Graphics </a>	
-					
-				</div>		
-			</div>	
-			<div class="box1">
-				<a href = "contact.html" class="contact"> About </a>
-				<a href = "resume.html" class="contact" > Resume </a>	
-			</div>
+			<img id = "logo" src="assets/img/logogreen-06.png" height="80px" width="80px" >
+		</a>
 		</div>
+
+		<div id="leftmenu">
+			<div class="bottommenu">
+				<a href="index.html" class="contact" id= 'work'> work </a>
+				<a href = "contact.html" class="contact"> about </a>
+				<a href = "resume.html" class="contact" > resume </a>	
+			</div>
+				
+		</div>
+		
 	</div>
 
 	<div class="pagecont">
@@ -42,19 +34,37 @@
 		<p class="dTitle">Exhale</p>
 		<div class="description">
 			<p class="description_txt"> As a project for Visual Thinking (Fall 2019), I created this simple site as a response to our prompt of creating a distributable, nondiscrete piece of art. 
-				<br> After thinking about the types of distributable products I could create, I noticed that mental health on college campuses is often neglected, so I wanted to design a website to target one facet of this complex issue. I decided to build a website with a breathing activity, which I saw as a potential solution to help reduce some of the stress students experience, and wanted to ensure that this resource was accessible and intuitive to use.  <br>
-				<br> <span style="font-weight: 600;"> Timeline: </span> 4 weeks - Fall 2019
-				<br> <span style="font-weight: 600;"> Design Challenge: </span> Create a nondiscrete, distributable piece of art. 
-				<br> <span style="font-weight: 600;"> Team: </span> Reese Gyllenhammer <br>
+				<br> I noticed that mental health on college campuses is often neglected, so I wanted to design a website to target one facet of this complex issue. I decided to build a website with a breathing activity, which I saw as a potential solution to help reduce some of the stress students experience, and wanted to ensure that this resource was accessible and intuitive to use.  <br>
+
+				<div class="specs_txt">
+					<div>
+						<br> <span style="font-weight: 600;"> Timeline: </span> 
+						<br> November - December 2019
+					</div>
+					<div>
+						<br> <span style="font-weight: 600;"> Tools: </span> 
+						<br> Adobe Illustrator, HTML/CSS, three.js
+					</div>
+					<div>
+						<br> <span style="font-weight: 600;"> Team: </span>
+						<br> Reese Gyllenhammer <br>
+					</div>
+
+				</div>
 		</div>
 
-		<p class="description_txt"> <span class= "boldwrd"> Sketch: </span> </p>
-		<div class="pics">
-			<img class="portpics" src="assets/img/plswork.png" width="300px" >
-			<img class="portpics" src="assets/img/inhale2.png" width="300px" >
-			<img class="portpics" src="assets/img/circle.png" width="300px" >
-			<p class="description_txt_1"> My initial thought was to create a circle expanded and contracted to the rhythm of a breath that looked like the picture above. </p>
+		<div class="pageitem">
+			<p class="description_txt"> <span class= "boldwrd"> Sketch: </span> </p>
+			<div class="pics">
+				<p class="description_txt_1"> My initial thought was to create a circle expanded and contracted to the rhythm of a breath that looked like the picture above. </p>
+				<img class="portpics" src="assets/img/plswork.png" width="300px" >
+				<img class="portpics" src="assets/img/inhale2.png" width="300px" >
+				<img class="portpics" src="assets/img/circle.png" width="300px" >
+				
+			</div>
+			
 		</div>
+		
 		
 		<p class="description_txt"> <span class= "boldwrd"> Website: </span> </p>
 		<div class="pics">
@@ -69,9 +79,9 @@
 		
 		<p class="description_txt"> <span class= "boldwrd"> Branding Materials: </span> </p>
 		<div class="pics">
-			<img class="portpics" src="assets/img/stickernew.png" width="500px" data-aos="fade-up">
-			<img class="portpics" src="assets/img/stickernew2.png" width="500px" data-aos="fade-up">
-			<p class="description_txt_1"> These are two sticker or flyer designs that could be printed and distributed around UC Berkeley in order to spread awareness of this digital tool. </p>
+			<img class="portpics" src="assets/img/stickernew.png" width="600px" data-aos="fade-up">
+			<img class="portpics" src="assets/img/stickernew2.png" width="600px" data-aos="fade-up">
+			<p class="description_txt_1"> These are two sticker or flyer designs that could be printed and distributed around UC Berkeley in order to spread awareness of this digital tool. </p> <br> <br>
 
 		</div>
 		
@@ -81,7 +91,9 @@
 
 	</div>
 </div>
-
+<div id = 'bottommenu'>
+	
+</div>
 <div class="center-con">
 	<div class="round" >
 		<div id="cta">
@@ -98,6 +110,31 @@
         duration: 1000, // values from 0 to 3000, with step 50ms
         
     });
+
+    var workitems = [{'title':'His Pills', 'link':'his.html'}, {'title':'Exhale', 
+	'link': 'exhale.html'}, {'title': 'BARE', 'link':'misc.html'},
+	{'title': 'Lightning McQueen', 'link':'light.html'},
+	{'title': 'Papaya', 'link':'papaya.html'},
+	{'title': 'Graphics', 'link':'graphics.html'},
+	];
+
+	var menu = document.getElementById('bottommenu');
+
+	var workmenu = document.createElement('div');
+	workmenu.className = ('bottommenu1');
+
+
+
+	for (i = 0; i < workitems.length; i++) {
+		var work = workitems[i];
+		var createA = document.createElement('a');
+		createA.className = ('sidebar_item');
+		createA.setAttribute('href', work.link);
+		createA.innerText = work.title;
+		workmenu.appendChild(createA);
+	};
+
+	menu.appendChild(workmenu);
   </script>
 
 </body>

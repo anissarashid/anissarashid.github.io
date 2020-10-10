@@ -12,33 +12,24 @@
 </head>
 <body>
 	
-	<div class="menu">
+	<div id="bothmenu">
+		<div class="rightmenu">
 		<a href= "index.html" class="name"> 
-		<img id = "logo" src="assets/img/logoblack.png" height="80px" width="80px" >
-		<img id = "logo2" src="assets/img/logored.png" height="80px" width="80px" > </a>
-		<div class="menucontents">	
-			<div class="box">
-				<div class="col1">
-					<a href="index.html" class="side"> Work </a>
-				</div>
-				<div class="col2">
-					<a href = "his.html" class="sidebar_item"> His Pills </a>	
-					<a href = "exhale.html" class="sidebar_item"> Exhale </a>	
-					<a href = "misc.html" class="sidebar_item"> BARE </a>
-					<a href = "light.html" class="sidebar_item"> Lightning McQueen </a>	
-					<a href = "papaya.html" class="sidebar_item"> Papaya </a>
-					<a href = "graphics.html" class="sidebar_item"> Graphics </a>	
-					
-				</div>
-				
-			</div>	
-			<div class="box1">
-				<a href = "contact.html" class="contact"> About </a>
-				<a href = "resume.html" class="contact" > Resume </a>	
-			</div>
-			
+			<img id = "logo" src="assets/img/logogreen-06.png" height="80px" width="80px" >
+		</a>
 		</div>
+
+		<div id="leftmenu">
+			<div class="bottommenu">
+				<a href="index.html" class="contact" id= 'work'> work </a>
+				<a href = "contact.html" class="contact"> about </a>
+				<a href = "resume.html" class="contact" > resume </a>	
+			</div>
+				
+		</div>
+		
 	</div>
+
 
 	<div class="pagecont">
 	<div class="container" style="max-width: 950px; ">
@@ -87,6 +78,11 @@
 
 	</div>
 	</div>
+
+<div id = 'bottommenu'>
+	
+</div>
+
 <div class="center-con">
 	<div class="round" >
 		<div id="cta">
@@ -103,6 +99,30 @@
         duration: 1000, // values from 0 to 3000, with step 50ms
         
     });
+     var workitems = [{'title':'His Pills', 'link':'his.html'}, {'title':'Exhale', 
+	'link': 'exhale.html'}, {'title': 'BARE', 'link':'misc.html'},
+	{'title': 'Lightning McQueen', 'link':'light.html'},
+	{'title': 'Papaya', 'link':'papaya.html'},
+	{'title': 'Graphics', 'link':'graphics.html'},
+	];
+
+	var menu = document.getElementById('bottommenu');
+
+	var workmenu = document.createElement('div');
+	workmenu.className = ('bottommenu1');
+
+
+
+	for (i = 0; i < workitems.length; i++) {
+		var work = workitems[i];
+		var createA = document.createElement('a');
+		createA.className = ('sidebar_item');
+		createA.setAttribute('href', work.link);
+		createA.innerText = work.title;
+		workmenu.appendChild(createA);
+	};
+
+	menu.appendChild(workmenu);
   </script>
 
 </body>
