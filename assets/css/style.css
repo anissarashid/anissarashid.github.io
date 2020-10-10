@@ -1,5 +1,5 @@
 body {
-	background: #f7f6ed;
+	background: #fafafa;
 	scroll-behavior: smooth;
 	
 
@@ -36,7 +36,7 @@ video {
 a:hover {
 	transition: 0.3s;
 	cursor: pointer;
-	color: #b51414;
+	color: #1200db;
 	transform: scale(1.02);
 }
 
@@ -59,9 +59,56 @@ a {
     max-width: 800px;
     width: 100%;
     margin-top: 4%; 
+
 }
 
 /* menu */
+
+
+#bothmenu {
+	position: fixed;
+	width: 100%;
+	left: 50%;
+	transform: translateX(-50%);
+	display: flex;
+	align-items: center; 
+	justify-content: space-between;
+
+
+}
+
+#leftmenu {
+	display: flex;
+	width: 30%;
+	flex-direction: column;
+	justify-content: flex-end;
+	flex-wrap: nowrap;
+	align-items: flex-end;
+
+}
+
+.rightmenu {
+	width: 10%;
+	display: flex;
+	justify-content: center;	
+
+}
+
+.bottommenu {
+	width: 100%;
+	display: flex;
+	
+	justify-content: space-around;		
+}
+
+.bottommenu1 {
+	width: 100%;
+	display: flex;
+	justify-content: space-around;	
+	position: fixed;
+	top: 95%;
+
+}
 
 
 .menu {
@@ -70,12 +117,10 @@ a {
 	display: flex;
 	flex-direction: column;
 	margin-left: 5%;
-	position: fixed;
 	margin-top: 3%;
 	margin-right: 7%;
-	z-index: 1;
-
-
+	
+	
 }
 
 a.name {
@@ -86,11 +131,11 @@ a.name {
 }
 
 .name {
-	margin-bottom: -10%;
+	
 }
 
 .side {
-	font-size: 17px;
+	font-size: 27px;
 	font-weight: 700;
 	font-family: jaf-lapture-display, serif;
 	margin-bottom: 1%;
@@ -102,28 +147,22 @@ a.name {
 	font-size: 18px;
 	font-family: jaf-lapture-display, serif;
 	font-weight: 600;
-	color: #b51414;
+	color: #1200db;
 }
 
 .sidebar_item:hover {
-	color: black;
+	color: #bcc105;
 }
 
 #logo2 {
 	position: fixed;
-	left:5.5%;
-	opacity: 0;
-}
-
-.name:hover #logo2 {
-	position: fixed;
-	left: -1%;
+	left:6%;
 	opacity: 1;
+	margin-top: -7%;
+	margin-right: 7%;
+	display: none;
 }
 
-.name:hover #logo {
-	opacity: 0
-}
 
 .box {
 	display: flex;
@@ -160,10 +199,16 @@ a.name {
 
 a.contact {
 	margin-bottom: 17px;
-	font-size: 17px;
+	font-size: 24px;
 	font-weight: 700;
 	font-family: jaf-lapture-display, serif;
+	color: #1200db;
 }
+
+a.contact:hover {
+	color: #d10000;
+}
+
 
 
 
@@ -174,11 +219,14 @@ a.contact {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-	
+	width: 100%;
 	margin-top: 5%;
 	animation: fadeInAnimation ease 3s; 
     animation-iteration-count: 1; 
-    animation-fill-mode: forwards; 
+    animation-fill-mode: forwards;
+    max-width: 1000px;
+
+
    
 }
 
@@ -202,6 +250,12 @@ a.contact {
 
 }
 
+.pageitem {
+	display: flex;
+	flex-direction: row;
+	
+}
+
 a.txtover {
 	margin-right: 7%; 
 	margin-left: 7%; 
@@ -212,7 +266,7 @@ a.txtover:hover img {
 	opacity: .1;
 	transition: 0.4s;
 	cursor: pointer;
-	color: #b51414;
+	color: #1200db;
 }
 
 
@@ -220,7 +274,7 @@ a.txtover:hover video {
 	opacity: .1;
 	transition: 0.4s;
 	cursor: pointer;
-	color: #b51414;
+	color: #1200db;
 }
 
 
@@ -233,7 +287,7 @@ a.txtover:hover #title {
 	position: relative;
 	margin-left: 2%;
   	font-size: 32px;
-  	color: #b51414;
+  	color: #1200db;
   	opacity: 1;
 	font-family: jaf-lapture, serif;
 	font-weight: 400;
@@ -270,7 +324,7 @@ a.txtover:hover #title {
 	font-weight: 700;
 	font-family: jaf-lapture-display, serif;
 	z-index: -1;
-	color: #b51414;
+	color: #1200db;
 }
 
 .description {
@@ -283,13 +337,26 @@ a.txtover:hover #title {
 	font-size: 20px;
 	font-family: degular, sans-serif;
 	margin-bottom: 0.5%;
+	
+}
+
+.specs_txt {
+	font-weight: 300;
+	font-size: 20px;
+	font-family: degular, sans-serif;
+	margin-bottom: 0.5%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+
 }
 
 .boldwrd {
 	font-weight: 700;
 	font-family: jaf-lapture-display, serif;
 	font-size: 27px;
-	color: #b51414;
+	color: #1200db;
+	width: 100%;
 }
 
 .pics {
@@ -305,6 +372,7 @@ a.txtover:hover #title {
 	align-items: center;
 	flex-wrap: wrap;
 	justify-content: center;
+
 }
 
 .portpics {
@@ -468,7 +536,7 @@ a.txtover:hover #title {
   	left: 4%;
   	top: -13%;
   	font-size: 35px;
-  	color: #b51414;
+  	color: #1200db;
   	text-align: center;
   	opacity: 1;
 	font-family: monarcha, serif;
@@ -486,7 +554,7 @@ a.txtover:hover #title {
 	font-weight: 700;
 	font-family: jaf-lapture-display, serif;
 	font-size: 20px;
-	color: #b51414;
+	color: #1200db;
 	margin:10px;
 	text-align: start;
 }
