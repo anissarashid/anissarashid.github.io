@@ -16,7 +16,7 @@
 	<div id="bothmenu">
 		<div class="rightmenu">
 		<a href= "index.html" class="name"> 
-			<img id = "logo" src="assets/img/logogreen-06.png" height="80px" width="80px" >
+			<p id="logo"> anissa rashid </p>
 		</a>
 		</div>
 
@@ -33,8 +33,13 @@
 
 	<div class="pagecont">
 	<div class="container_home">
-			
+	
+			<p class="boldwrd" style="text-align: center; z-index: 3;"> <span class="euro" style="font-size: 40px;"> anissa rashid</span> 
+			<br> <span class="euro">is a multidisciplinary designer studying 
+			<br>
+			Data Science, Economics, and Design at UC Berkeley.</span> </p>
 			<div class="thumbs_wrapper">
+
 				<div class="picss">
 					<a href="his.html" class="txtover"> 
 						<div id= "newtitle"> His Pills </div>
@@ -93,6 +98,8 @@
 			
 	</div>
 </div>
+<div id = "heart" > </div>
+	<div id = "tube" > </div>
 
 <div id = 'bottommenu'>
 	
@@ -143,7 +150,173 @@
 	menu.appendChild(workmenu);
 
   </script>
+  <script src="scripts/three.js"></script>
+		<script type="module">
+			import * as THREE from 'https://unpkg.com/three/build/three.module.js';
 
+			var camera, scene, renderer;
+			var mesh, sprite, texture;
+
+			var cameraOrtho, sceneOrtho;
+
+			var dpr = window.devicePixelRatio;
+
+			var textureSize = 128 * dpr;
+			var vector = new THREE.Vector2();
+			var theta = 0;
+
+			var location;
+			var x = 0, y = 0;
+
+			var heartShape = new THREE.Shape();
+
+			heartShape.moveTo( x + 5, y + 5 );
+			heartShape.bezierCurveTo( x + 5, y + 5, x + 4, y, x, y );
+			heartShape.bezierCurveTo( x - 6, y, x - 6, y + 7,x - 6, y + 7 );
+			heartShape.bezierCurveTo( x - 6, y + 11, x - 3, y + 15.4, x + 5, y + 19 );
+			heartShape.bezierCurveTo( x + 12, y + 15.4, x + 16, y + 11, x + 16, y + 7 );
+			heartShape.bezierCurveTo( x + 16, y + 7, x + 16, y, x + 10, y );
+			heartShape.bezierCurveTo( x + 7, y, x + 5, y + 5, x + 5, y + 5 );
+
+			init();
+			animate();
+
+			function init() {
+
+				//
+
+				location = document.getElementById('heart')
+
+				var width = window.innerWidth;
+				var height = window.innerHeight;
+
+				camera = new THREE.PerspectiveCamera( 70, width / height, 1, 500 );
+				camera.position.z = 20;
+
+				cameraOrtho = new THREE.OrthographicCamera( - width / 2, width / 2, height / 2, - height / 2, 1, 10 );
+				cameraOrtho.position.z = 10;
+
+				scene = new THREE.Scene();
+				
+				sceneOrtho = new THREE.Scene();
+
+				//
+
+
+				var geometry = new THREE.ShapeGeometry( heartShape );
+				geometry = geometry.scale(0.15,0.15,0.15);
+				var material = new THREE.MeshStandardMaterial( { color:'#ff8359', wireframe:false, roughness:0} );
+
+				mesh = new THREE.Mesh( geometry, material );
+				scene.add( mesh );
+
+				//
+				var ambientLight = new THREE.AmbientLight( 0xcccccc, 0.7 );
+				scene.add( ambientLight );
+
+				var pointLight = new THREE.PointLight( '#fcbaa4', 1);
+				camera.add( pointLight );
+				scene.add( camera );
+
+				//
+
+
+				renderer = new THREE.WebGLRenderer( { alpha: true } );
+				renderer.setPixelRatio( window.devicePixelRatio );
+				renderer.setSize( window.innerWidth, window.innerHeight );
+				renderer.autoClear = false;
+				location.appendChild( renderer.domElement );
+
+				//
+
+
+
+				window.addEventListener( 'resize', onWindowResize, false );
+
+			}
+
+			function onWindowResize() {
+
+				var width = window.innerWidth;
+				var height = window.innerHeight;
+
+				camera.aspect = width / height;
+				camera.updateProjectionMatrix();
+
+				cameraOrtho.left = - width / 2;
+				cameraOrtho.right = width / 2;
+				cameraOrtho.top = height / 2;
+				cameraOrtho.bottom = - height / 2;
+				cameraOrtho.updateProjectionMatrix();
+
+				renderer.setSize( window.innerWidth, window.innerHeight );
+
+				updateSpritePosition();
+
+			}
+
+			function updateSpritePosition() {
+
+				var halfWidth = window.innerWidth / 2;
+				var halfHeight = window.innerHeight / 2;
+
+				var halfImageWidth = textureSize / 2;
+				var halfImageHeight = textureSize / 2;
+
+				sprite.position.set( - halfWidth + halfImageWidth, halfHeight - halfImageHeight, 1 );
+
+			}
+
+			function animate() {
+
+				requestAnimationFrame( animate );
+
+				var spin = function(theta){
+					var tmp = Math.sin(-(1/2)*theta);
+					var output = (tmp - (-1)) * (0.008 - 0) / (1 - (-1)) + 0;
+
+					return output
+				}
+				
+
+				var scale = function(theta){
+					var tmp = Math.sin(theta);
+					var output = (tmp - (-1)) * (1.8 - 1) / (1 - (-1)) + 1;
+					return output
+				}
+
+				theta += 0.026;
+
+				mesh.scale.x = scale((1/1.5)*theta);
+				mesh.scale.y = scale((1/1.5)*theta);
+				mesh.scale.z = scale((1/1.5)*theta);
+
+				mesh.rotation.y += spin(theta);
+				mesh.rotation.x += spin(theta);
+			
+
+				renderer.render( scene, camera );
+				renderer.clear();
+				renderer.render( scene, camera );
+
+				// calculate start position for copying data
+
+				renderer.copyFramebufferToTexture( vector, texture );
+
+				renderer.clearDepth();
+				renderer.render( sceneOrtho, cameraOrtho );
+
+			}
+
+
+		</script>
+
+
+		
+
+
+
+		
 
 </body>
 
