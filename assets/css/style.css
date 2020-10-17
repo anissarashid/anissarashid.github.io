@@ -73,6 +73,8 @@ a {
 	display: flex;
 	align-items: center; 
 	justify-content: space-between;
+	margin: 1%;
+
 
 
 }
@@ -88,26 +90,35 @@ a {
 }
 
 .rightmenu {
-	width: 10%;
+	width: 20%;
 	display: flex;
-	justify-content: center;	
+	justify-content: flex-start;	
+	margin-left: 2%;
+	top: -3%;
 
 }
 
 .bottommenu {
 	width: 100%;
 	display: flex;
-	
+	background-color: #fafafa;
 	justify-content: space-around;		
 }
+
 
 .bottommenu1 {
 	width: 100%;
 	display: flex;
 	justify-content: space-around;	
 	position: fixed;
-	top: 95%;
+	top: 94%;
+	padding-bottom: 0.4%;
+	padding-top: 0.7%;
+	background-color:#fafafa;
+}
 
+#bottommenu {
+	background-color: #fafafa;
 }
 
 
@@ -163,6 +174,43 @@ a.name {
 	display: none;
 }
 
+#logo {
+	font-family: eckmannpsych-medium,sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 160%;
+	width: 100%;
+	margin: 0;
+	overflow: hidden;
+    white-space: nowrap;
+    z-index: 2;
+
+    background: linear-gradient(319deg, #1100ff, #99a6d7, #1937a8, #afcfee);
+    background-size: 800% 800%;
+
+    -webkit-background-clip: text;
+ 	-webkit-text-fill-color: transparent;
+
+    -webkit-animation: AnimationName 13s ease infinite;
+    -moz-animation: AnimationName 13s ease infinite;
+    animation: AnimationName 13s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 84%}
+    50%{background-position:100% 17%}
+    100%{background-position:0% 84%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 84%}
+    50%{background-position:100% 17%}
+    100%{background-position:0% 84%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 84%}
+    50%{background-position:100% 17%}
+    100%{background-position:0% 84%}
+}
 
 .box {
 	display: flex;
@@ -229,6 +277,47 @@ a.contact:hover {
 
    
 }
+
+.eck {
+	font-family: eckmannpsych-medium,sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 50px;
+	width: 100%;
+
+}
+
+.euro {
+	font-family: eurostile-extended,sans-serif;
+	font-weight: 400;
+	font-style: normal;
+}
+
+
+#location {
+	position: fixed;
+	z-index: -5;
+}
+
+#heart {
+	
+	
+	top: 2%;
+	max-width: 200px;
+	max-height: 200px;
+	overflow: hidden;
+
+}
+
+canvas {
+	position: fixed;
+	z-index: -3;
+	left: 50%;
+	transform: translate(-50%, 0%);
+	top: -10%;
+
+}
+
 
 .thumbs_wrapper {
 	display: flex;
