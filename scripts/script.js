@@ -4,7 +4,7 @@ $(document).ready(function() {
 	var white = true;
 	$('.center-con').click(function() {
 		if (white & !black & !purple) {
-			$('body, .bottommenu, .bottommenu1').css('background', '#323232');
+			$('body, .bottommenu, .bottommenu1, #bothmenu').css('background', '#323232');
 			$('p').css('color', '#f46b42');
 			$('.sidebar_item, .side, .contact, .contactt, .title_thumb, #newtitle, .dTitle, .boldwrd, .dTitle').css('color', '#f46b42');
 			$('.description_txt, .description_txt_1').css('color', '#f7f7f7');
@@ -13,7 +13,7 @@ $(document).ready(function() {
 			purple = false;
 		} 
 		else if (black & !white & !purple) {
-			$('body, .bottommenu, .bottommenu1').css('background', '#b0acc1');
+			$('body, .bottommenu, .bottommenu1, #bothmenu').css('background', '#b0acc1');
 			$('p').css('color','#fce8c7');
 			$('.sidebar_item, .side, .contact, .contactt, .title_thumb, #newtitle, .dTitle, .boldwrd').css('color','#fce8c7');
 			$('.description_txt, .description_txt_1').css('color', '#f7f7f7');
@@ -23,7 +23,7 @@ $(document).ready(function() {
 		}
 
 		else {
-			$('body, .bottommenu, .bottommenu1').css('background', '#fafafa');
+			$('body, .bottommenu, .bottommenu1, #bothmenu').css('background', '#fafafa');
 			$('p').css('color','black');
 			$('.sidebar_item, .side, .contact, .contactt, .title_thumb, .dTitle, .boldwrd').css('color','#1200db');
 			$('.description_txt, .description_txt_1').css('color', 'black');
