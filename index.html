@@ -14,6 +14,9 @@
 </head>
 <body>
 	
+
+
+
 	<div id="bothmenu">
 		<div class="rightmenu">
 		<a href= "index.html" class="name"> 
@@ -34,7 +37,9 @@
 
 	<div class="pagecont">
 	<div class="container_home">
-	
+			
+			<p id="message" style="display: none;">Please use this on a desktop.</p>
+
 			<p class="boldwrd" style="text-align: center; z-index: 3;"> <span class="euro" style="font-size: 40px;"> anissa rashid</span> 
 			<br> <span class="euro">is a multidisciplinary designer studying 
 			<br>
@@ -173,6 +178,14 @@
 	menu.appendChild(workmenu);
 
   </script>
+
+  <script>
+		if (window.innerWidth < 500){
+	    document.getElementById("message").style.display = "block";
+		}
+	</script>
+
+
   <script src="scripts/three.js"></script>
 		<script type="module">
 			import * as THREE from 'https://unpkg.com/three/build/three.module.js';
