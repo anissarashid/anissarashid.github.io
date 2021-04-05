@@ -407,10 +407,6 @@ a.txtover:hover #title {
 .newhome {
 	display: flex;
 	justify-content: center;
-	width: 100%;
-	height: auto;
-	overflow: hidden;
-
 }
 
 #title {	
@@ -424,8 +420,7 @@ a.txtover:hover #title {
 }
 
 #frontpics {
-	max-width: 100%;
-	max-height: 10%;
+	height: 200px;
 	margin:0%;
 
 }
