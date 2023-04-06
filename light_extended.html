@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://use.typekit.net/osp0fvo.css">
+	<script src="scripts/script.js"></script>	
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Work+Sans:400,500,600,700,800,900&display=swap" rel="stylesheet">
+	<link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico?">
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+	<title>Prototyping & Fabrication | Anissa Rashid</title>
+</head>
+<body>
+	
+	<div id="bothmenu">
+		<div class="rightmenu">
+		<a href= "index.html" class="name"> 
+			<p id="logo"> anissa rashid </p>
+		</a>
+		</div>
+
+		<div id="leftmenu">
+			<div class="bottommenu">
+				<a href="index.html" class="contact" id= 'work'> work </a>
+				<a href = "contact.html" class="contact"> about </a>
+			</div>
+				
+		</div>
+		
+	</div>
+
+
+	<div class="pagecont">
+	<div class="container">
+		<p class="dTitle">Lightning McQueen</p>
+		<div class="description">
+			<p class="description_txt"> As a project for Prototyping and Fabrication, my team partner and I were prompted to build a bluetooth motorized chassis. This course taught skills in designing, prototyping, and fabricating for physical objects, including 2D and 3D modeling and fabrication, basic electronics, lasercutting, and 3D printing. <br> 
+			<div class="specs_txt">
+				<div>
+					<br> <span style="font-weight: 600;"> Timeline: </span> 
+					<br> June - July 2019 
+				
+				</div>
+					
+				<div>
+					<br> <span style="font-weight: 600;"> Tools: </span> 
+					<br> Adobe Illustrator, Arduino, Universal VLS 
+				</div>
+					
+				<div>
+					<br> <span style="font-weight: 600;"> Team: </span> 
+					<br> Diana Fan <br>
+				</div>
+			</div>
+
+			</p>
+			
+		</div>
+
+		<div class="pageitem">
+			<p class="description_txt"> <span class= "boldwrd"> Cardboard prototype: </span> </p>
+			<div class="pics">
+				<p class="description_txt_1"> We wanted to create movement through using a rubber tread around the outer planetary gears and motorizing the central gear. We believed that the triangular shape would work best for lightness, stablility, and speed. </p>
+				<img class="portpics" src="assets/img/card1.png" height ="350px" >
+				<img class="portpics" src="assets/img/card2.png" height ="350px" >
+			</div>
+			
+		</div>
+		
+		
+		<p class="description_txt"> <span class= "boldwrd"> Motorized chassis prototype: </span> </p>
+		<div class="pics">
+			<video class="portpics" width="650" preload controls autoplay loop muted="true" data-aos="fade-up">
+				<source src="assets/img/final1.mp4">
+			</video>
+			<p class="description_txt_1"> Following our initial cardboard prototype, we laser cut .25” plywood and attached our motor to the center gear, which was used to spin the outer gears. We used a gear piece from another commercial motororized chassis, and replicated this gear by laser cutting and stacking the plywood to get a perfect fit. For the body of the prototype, we cut multiple slots out so we could find the best fit and placement for the BLE feather and batteries. </p>
+		</div>
+
+		<div class="pageitem">
+			<p class="description_txt"> <span class= "boldwrd"> Adobe Illustrator Files: </span> </p>
+			<div class="pics">
+				<img class="portpics" src="assets/img/ai1.png" height="300px" data-aos="fade-up">
+				<img class="portpics" src="assets/img/ai2.png" height="300px" data-aos="fade-up">
+				
+			</div>
+			
+		</div>
+		
+		<div class="pageitem">
+			<p class="description_txt"> <span class= "boldwrd"> Final iteration: </span> </p>
+			<div class="pics">
+				<p class="description_txt_1"> We 3D printed wheels and treads using flex, and made the rest of the body using clear acrylic. It took multiple adjustments to find the perfect fit for the wheels and tread, by making sure there was not too much or too little slack. We made the top hole adjustable so we could slide the wheels on and off, and created washers to support the wheels onto the body. Using the same motors and BLE feather, we assembled the rest of the body similar to the wooden prototype, and we made cases for each of the components with easy access to switch them in and out. </p>
+				<img class="portpics" src="assets/img/final1.png" height ="350px" data-aos="fade-up">
+				<img class="portpics" src="assets/img/final2.png" height ="350px" data-aos="fade-up">
+
+		</div>
+			
+		</div>
+		<p class="description_txt"> <span class= "boldwrd"> Final prototype: </span> </p>
+		<div class="pics">
+			<video class="portpics" width="700"  preload controls autoplay loop muted="true" data-aos="fade-up">
+				<source src="assets/img/final.mp4">
+			</video>
+
+		</div>
+	</div>
+</div>
+
+<div id = 'bottommenu'>
+	
+</div>
+
+<div class="center-con">
+	<div class="round" >
+		<div id="cta">
+		    <span class="arrow primera next "></span>   
+		</div>
+	</div>
+</div>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+    	offset: 30, // offset (in px) from the original trigger point
+        delay: 0, // values from 0 to 3000, with step 50ms
+        duration: 1000, // values from 0 to 3000, with step 50ms
+        
+    });
+
+    var workitems = [{'title':'His Pills', 'link':'his.html'},
+    {'title':'Pinterest Redesign', 
+	'link': 'pinterest.html'}, {'title':'Exhale', 
+	'link': 'exhale.html'}, {'title': 'BARE', 'link':'misc.html'},
+	{'title': 'Lightning McQueen', 'link':'light.html'},
+	{'title': 'Graphics', 'link':'graphics.html'},
+	];
+
+	var menu = document.getElementById('bottommenu');
+
+	var workmenu = document.createElement('div');
+	workmenu.className = ('bottommenu1');
+
+
+
+	for (i = 0; i < workitems.length; i++) {
+		var work = workitems[i];
+		var createA = document.createElement('a');
+		createA.className = ('sidebar_item');
+		createA.setAttribute('href', work.link);
+		createA.innerText = work.title;
+		workmenu.appendChild(createA);
+	};
+
+	menu.appendChild(workmenu);
+  </script>
+</body>
+</html>
+
