@@ -7,7 +7,7 @@ body {
 
 p {
 	
-	font-family: degular, sans-serif;
+	font-family: jaf-lapture-display, sans-serif;
 
 	font-weight: 400;
 
@@ -20,6 +20,7 @@ a {
 	font-weight: 500;
 
 	font-style: normal;
+	text-decoration: underline;
 }
 
 img {
@@ -37,14 +38,14 @@ video {
 a:hover {
 	transition: 0.3s;
 	cursor: pointer;
-	color: #1200db;
+	color: #f55702;
 	transform: scale(1.02);
 }
 
 a {
 	text-decoration: none;
     color: black;
-    margin-bottom:8px; 
+    margin-bottom:8px;
 }
 
 ul {
@@ -94,12 +95,13 @@ ul.description_txt_1 {
 
 #leftmenu {
 	display: flex;
-	width: 30%;
+	width: 20%;
 	flex-direction: column;
 	justify-content: flex-end;
 	flex-wrap: nowrap;
 	align-items: flex-end;
 	margin-top: 1%;
+	margin-right: 2%;
 
 }
 
@@ -271,7 +273,7 @@ a.contact {
 }
 
 a.contact:hover {
-	color: #d10000;
+	color: #f55702;
 }
 
 
@@ -446,9 +448,19 @@ a.txtover:hover #title {
 
 .description_txt {
 	font-weight: 300;
-	font-size: 20px;
-	font-family: degular, sans-serif;
+	font-size: 23px;
+	font-family: jaf-lapture-display, serif;
 	margin-bottom: 0.5%;
+	color: #1200db;
+	
+}
+
+.about_txt {
+	font-weight: 300;
+	font-size: 25px;
+	font-family: jaf-lapture-display, sans-serif;
+	margin-bottom: 0.5%;
+	color: #1200db;
 	
 }
 
@@ -696,9 +708,8 @@ a.txtover:hover #title {
 
 .round {
     position: absolute;
-    border: 1px solid black;
-    width: 40px;
-    height: 40px;
+    width: 60px;
+    height: 60px;
     border-radius: 100%;   
 }
 
@@ -708,10 +719,10 @@ a.txtover:hover #title {
 }
 
 #cta .arrow{left: 30%;}
-.arrow {position: absolute; bottom: 0; margin-top: -3px; margin-left:0px; width: 20px; height: 20px; background-size: contain; top:15px;}
+.arrow {position: absolute; bottom: 0; margin-top: -3px; margin-left:0px; width: 30px; height: 30px; background-size: contain; top:15px;}
 .segunda{margin-left: 10px;}
 .next {
-	background-image: url(http://icons.iconarchive.com/icons/icons8/ios7/512/Weather-Partly-Cloudy-Night-icon.png);
+	background-image: url(https://icons.iconarchive.com/icons/bootstrap/bootstrap/128/Bootstrap-sun-fill-icon.png);
 }
 
 @keyframes load-in {

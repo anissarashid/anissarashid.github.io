@@ -26,7 +26,7 @@ $(document).ready(function() {
 			$('body, .bottommenu, .bottommenu1, #bothmenu').css('background', '#fafafa');
 			$('p').css('color','black');
 			$('.sidebar_item, .side, .contact, .contactt, .title_thumb, .dTitle, .boldwrd').css('color','#1200db');
-			$('.description_txt, .description_txt_1').css('color', 'black');
+			$('.description_txt, .description_txt_1, .about_txt').css('color', '#1200db');
 			$('.txtover, #newtitle').css('color','#1200db');
 			black = false;
 			purple = false;
